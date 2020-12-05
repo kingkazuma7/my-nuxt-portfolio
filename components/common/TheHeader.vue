@@ -26,17 +26,3 @@
     </v-card>
   </div>
 </template>
-
-<style scoped lang="scss">
-.header {
-  &__inner {
-    max-width: 960px;
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-</style>
