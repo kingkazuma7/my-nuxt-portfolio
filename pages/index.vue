@@ -109,29 +109,34 @@
     <section class="gallery" id="gallery">
       <h2 class="section-title">Gallery</h2>
       <ArticleGallery>
-        <div class="btn-wrapper">
-          <button
-            v-for="(tab, index) in tabs"
-            :key="tab.id"
-            @click="currentTab = index"
-          >
-            {{ tab.tabName }}
-          </button>
+        <div>
+          <v-tabs v-model="model">
+            <v-tab href="#tab-1">タブ1</v-tab>
+            <v-tab href="#tab-2">タブ2</v-tab>
+            <v-tab href="#tab-3">タブ3</v-tab>
+          </v-tabs>
+          <v-tabs-items v-model="model">
+            <v-tab-item value="tab-1"> タブ1で表示するコンテンツ </v-tab-item>
+            <v-tab-item value="tab-2"> タブ2で表示するコンテンツ </v-tab-item>
+            <v-tab-item value="tab-3"> タブ3で表示するコンテンツ </v-tab-item>
+          </v-tabs-items>
         </div>
-        <ul class="tab-content">
-          <li v-show="currentTab === 0">hoge</li>
-          <li v-show="currentTab === 1">fuga</li>
-          <li v-show="currentTab === 2">soge</li>
-        </ul>
-        <a class="link" href="/gallery/">gallery</a>
       </ArticleGallery>
     </section>
   </div>
 </template>
 
-<script src="./index.js"></script>
+<script>
+export default {
+  data() {
+    return {
+      model: "tab-1",
+    };
+  },
+};
+</script>
 
-<style scoped lang="scss" rel="">
+<style scoped lang="scss" rel="" scoped>
 /* ----- common ----- */
 body {
   color: $color-black;
