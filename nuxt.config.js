@@ -49,7 +49,7 @@ export default {
    */
   modules: ["@nuxtjs/style-resources"],
   styleResources: {
-    scss: ["~/assets/scss/_variables.scss"]
+    scss: ["~/assets/scss/_variables.scss"],
   },
   /*
    ** Build configuration
@@ -60,7 +60,7 @@ export default {
     fallback: true
   },
   vuetify: {
-    customVariables: ['~/assets/scss/variables.scsss'],
+    customVariables: ['~/assets/variables.scss'],
     treeShaking: true,
   }
 };
