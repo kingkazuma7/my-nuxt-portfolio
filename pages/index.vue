@@ -111,14 +111,132 @@
       <ArticleGallery>
         <div>
           <v-tabs v-model="model">
-            <v-tab href="#tab-1">タブ1</v-tab>
-            <v-tab href="#tab-2">タブ2</v-tab>
-            <v-tab href="#tab-3">タブ3</v-tab>
+            <v-tab href="#tab-1">訓練校時代</v-tab>
+            <v-tab href="#tab-2">制作会社勤務</v-tab>
+            <v-tab href="#tab-3">事業会社</v-tab>
           </v-tabs>
           <v-tabs-items v-model="model">
-            <v-tab-item value="tab-1"> タブ1で表示するコンテンツ </v-tab-item>
-            <v-tab-item value="tab-2"> タブ2で表示するコンテンツ </v-tab-item>
-            <v-tab-item value="tab-3"> タブ3で表示するコンテンツ </v-tab-item>
+            <v-tab-item value="tab-1">
+              訓練校時代で表示するコンテンツ
+              <v-container class="fill-height" fluid>
+                <v-fade-transition mode="out-in">
+                  <v-row>
+                    <v-col cols="6">
+                      <v-card>
+                        <v-img
+                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/piquant_thum-1.jpg"
+                          max-height="125"
+                          class="grey darken-4"
+                        ></v-img>
+                        <v-card-title class="title"> max-height </v-card-title>
+                      </v-card>
+                    </v-col>
+                    <v-col cols="6">
+                      <v-card>
+                        <v-img
+                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/piquant_thum-1.jpg"
+                          max-height="125"
+                          class="grey darken-4"
+                        ></v-img>
+                        <v-card-title class="title"> max-height </v-card-title>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+                </v-fade-transition>
+              </v-container>
+            </v-tab-item>
+            <v-tab-item value="tab-2">
+              制作会社勤務で表示するコンテンツ
+              <v-container class="fill-height" fluid>
+                <v-fade-transition mode="out-in">
+                  <v-row>
+                    <v-col cols="6">
+                      <v-card>
+                        <v-img
+                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/five_thum.jpg"
+                          max-height="125"
+                          class="grey darken-4"
+                        ></v-img>
+                        <v-card-title class="title">
+                          <ul class="gallery__list">
+                            <li class="gallery__item">投資系</li>
+                            <li class="gallery__item">期間：2日</li>
+                            <li class="gallery__item">担当：コーディング</li>
+                            <li class="gallery__item">
+                              言語：HTML / CSS / Scss / jQuery
+                            </li>
+                            <li class="gallery__item">
+                              <a
+                                href="https://drive.google.com/drive/u/1/folders/1prp-rulmHRc1e2l4WSrsl2TKHsCdBRHA"
+                                target="_blank"
+                                >サイトはこちら</a
+                              >
+                            </li>
+                          </ul>
+                        </v-card-title>
+                      </v-card>
+                    </v-col>
+                    <v-col cols="6">
+                      <v-card>
+                        <v-img
+                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/soshisha_thum.jpg"
+                          max-height="125"
+                          class="grey darken-4"
+                        ></v-img>
+                        <v-card-title class="title">
+                          <ul class="gallery__list">
+                            <li class="gallery__item">広告代理店</li>
+                            <li class="gallery__item">期間：2週間</li>
+                            <li class="gallery__item">
+                              担当：コーディング、WPの組み込み
+                            </li>
+                            <li class="gallery__item">
+                              言語：HTML / CSS / Scss / WordPress / PHP / jQuery
+                            </li>
+                            <li class="gallery__item">
+                              <a
+                                href="https://drive.google.com/drive/u/1/folders/1Oc58Ej-PXVHzBxuDQd5Rv4sou6eGuQjs"
+                                target="_blank"
+                                >サイトはこちら</a
+                              >
+                            </li>
+                          </ul>
+                        </v-card-title>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+                </v-fade-transition>
+              </v-container>
+            </v-tab-item>
+            <v-tab-item value="tab-3">
+              事業会社で表示するコンテンツ
+              <v-container class="fill-height" fluid>
+                <v-fade-transition mode="out-in">
+                  <v-row>
+                    <v-col cols="6">
+                      <v-card>
+                        <v-img
+                          src="http://placehold.jp/16/aaaaaa/ffffff/150x100.png?text=comming soon"
+                          max-height="125"
+                          class="grey darken-4"
+                        ></v-img>
+                        <v-card-title class="title"> max-height </v-card-title>
+                      </v-card>
+                    </v-col>
+                    <v-col cols="6">
+                      <v-card>
+                        <v-img
+                          src="http://placehold.jp/16/aaaaaa/ffffff/150x100.png?text=comming soon"
+                          max-height="125"
+                          class="grey darken-4"
+                        ></v-img>
+                        <v-card-title class="title"> max-height </v-card-title>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+                </v-fade-transition>
+              </v-container>
+            </v-tab-item>
           </v-tabs-items>
         </div>
       </ArticleGallery>

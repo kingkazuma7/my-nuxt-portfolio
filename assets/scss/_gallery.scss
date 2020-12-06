@@ -1,0 +1,14 @@
+.gallery {
+  // &__list {
+  // }
+  &__item {
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-indent: -3em;
+    padding-left: 3em;
+    &:first-of-type {
+      font-size: 18px;
+    }
+  }
+}
