@@ -113,7 +113,7 @@
           <v-tabs v-model="model">
             <v-tab href="#tab-1">訓練校時代</v-tab>
             <v-tab href="#tab-2">制作会社勤務</v-tab>
-            <v-tab href="#tab-3">事業会社</v-tab>
+            <v-tab href="#tab-3">個人制作</v-tab>
           </v-tabs>
           <v-tabs-items v-model="model">
             <v-tab-item value="tab-1">
@@ -209,7 +209,7 @@
               </v-container>
             </v-tab-item>
             <v-tab-item value="tab-3">
-              事業会社で表示するコンテンツ
+              個人制作で表示するコンテンツ
               <v-container class="fill-height" fluid>
                 <v-fade-transition mode="out-in">
                   <v-row>
