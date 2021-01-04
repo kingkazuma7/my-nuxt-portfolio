@@ -20,8 +20,12 @@
 - 作品
   - フィルター検索できるようにする
     - 年別、〇〇勤務、言語
-  - 訓練校時代
+  - ~~訓練校時代~~
   - 制作会社勤務
+    - 広告代理店 荘子舎
+    - 投資
+    - ピカント
+    - ALA
   - 個人制作
     - ブレイクダンスサイト
     - このポートフォリオ（Nuxt + Vue）
@@ -43,7 +47,7 @@ assets/scss配下
 - _footer.scss（共通）
 - _header.scss（共通）
 - _profile.scss（ブロック）
-- _history.scss（ブロック）
+- _carrer.scss（ブロック）
 - _gallery.scss（ブロック）
 - base.scss（読み込み）
 

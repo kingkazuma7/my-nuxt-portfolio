@@ -47,7 +47,15 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/style-resources"],
+  modules: [
+    "@nuxtjs/style-resources",
+    'nuxt-webfontloader'
+  ],
+  webfontloader: {
+    google: {
+      families: ['Lato:400,700', 'Noto+Sans+SC:400,700']
+    }
+  },
   styleResources: {
     scss: ["~/assets/scss/_variables.scss"],
   },
