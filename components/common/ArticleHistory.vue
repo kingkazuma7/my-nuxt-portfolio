@@ -1,5 +1,5 @@
 <template>
-  <div class="article-history">
+  <div class="article-carrer">
     <slot />
   </div>
 </template>

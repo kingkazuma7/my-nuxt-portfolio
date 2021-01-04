@@ -1,3 +1,23 @@
+@import "_breakpoints";
+
+/* ----- br ----- */
+.pc-element {
+  display: block;
+}
+.sp-element {
+  display: none;
+}
+@media #{$breakpoint-pc} {
+  .sp-element {
+    display: block !important;
+  }
+}
+@media #{$breakpoint-sp} {
+  .pc-element {
+    display: none !important;
+  }
+}
+
 /* ----- title ----- */
 .section-title {
   display: flex;

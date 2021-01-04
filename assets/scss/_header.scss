@@ -1,4 +1,13 @@
+@import "_breakpoints";
+
 .header {
+  @media #{$breakpoint-sp} {
+    .v-app-bar,
+    .v-toolbar__content {
+      position: initial !important;
+      height: auto !important;
+    }
+  }
   &__inner {
     max-width: 960px;
     margin: 0 auto;
@@ -7,5 +16,35 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    @media #{$breakpoint-sp} {
+      max-width: 100%;
+      flex-direction: column;
+      padding: 30px 0 0;
+    }
+    .ttl {
+      font-family: 'Noto Sans SC', sans-serif;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+  &__button {
+    @media #{$breakpoint-sp} {
+      margin: 30px 0 20px;
+      // vuetify上書き
+      .btn.v-btn {
+        text-decoration: none;
+      }
+      .btn.v-btn.v-size--default {
+        font-size: 14px;
+      }
+      .btn.v-btn:not(.v-btn--round).v-size--default {
+        padding: 0 13px;
+      }
+    }
   }
 }

@@ -5,7 +5,7 @@
       <ArticleProfile>
         <img
           class="profile__img"
-          src="~/assets/images/portrait.png"
+          src="~/assets/images/nasi.png"
           alt="夏目漱石"
         />
         <p class="profile__lead">
@@ -18,92 +18,45 @@
       </ArticleProfile>
     </section>
 
-    <section class="history" id="history">
+    <section class="carrer" id="carrer">
       <h2 class="section-title">Carrer</h2>
-      <ArticleHistory>
-        <dl class="history__list">
-          <div class="history__box">
+      <Articlecarrer>
+        <dl class="carrer__list">
+          <div class="carrer__box">
             <dt>会社名</dt>
             <dd>株式会社ウェブスタッフ</dd>
             <dt>期間</dt>
             <dd>2020年7月～</dd>
-            <dt>事業内容</dt>
-            <dd>受託Web製作会社</dd>
-            <dt>雇用形態</dt>
-            <dd>契約社員</dd>
-            <dt>業務内容</dt>
-            <dd>Vueを用いた社内デザインシステム制作</dd>
           </div>
-          <div class="history__box">
+          <div class="carrer__box">
             <dt>会社名</dt>
             <dd>株式会社フライング・ハイ・ワークス</dd>
             <dt>期間</dt>
             <dd>2018年2月～2019年12月</dd>
-            <dt>事業内容</dt>
-            <dd>受託Web製作会社</dd>
-            <dt>雇用形態</dt>
-            <dd>正社員</dd>
-            <dt>業務内容</dt>
-            <dd>
-              <ul class="history__list__child">
-                <li>Webサイト更新業務</li>
-                <li>LP制作</li>
-                <li>小規模コーポレートサイト制作</li>
-              </ul>
-            </dd>
           </div>
-          <div class="history__box">
+          <div class="carrer__box">
             <dt>会社名</dt>
             <dd>株式会社アウルキャンプ</dd>
             <dt>期間</dt>
             <dd>2017年6月～11月</dd>
-            <dt>事業内容</dt>
-            <dd>証券会社からの依頼業務</dd>
-            <dt>雇用形態</dt>
-            <dd>契約社員</dd>
-            <dt>業務内容</dt>
-            <dd>
-              <ul class="history__list__child">
-                <li>NAS移行に伴うログファイルの確認、Excel記載</li>
-                <li>JobCenterツールの操作</li>
-              </ul>
-            </dd>
           </div>
-          <div class="history__box">
+          <div class="carrer__box">
             <dt>会社名</dt>
             <dd>フェリカテクニカルアカデミー Webサイト制作科</dd>
             <dt>期間</dt>
             <dd>2016年10月～2017年 4月</dd>
-            <dt>事業内容</dt>
-            <dd>求職者支援訓練校</dd>
-            <dt>雇用形態</dt>
-            <dd>受講生</dd>
-            <dt>業務内容</dt>
-            <dd>
-              <ul class="history__list__child">
-                <li>Webサイト制作にまつわる基礎理解（半年間のカリキュラム）</li>
-                <li>クライアントワーク</li>
-                <li>ポートフォリオの作成</li>
-              </ul>
-            </dd>
           </div>
-          <div class="history__box">
+          <div class="carrer__box">
             <dt>会社名</dt>
             <dd>株式会社サミット</dd>
             <dt>期間</dt>
             <dd>2016年4月～2016年 9月</dd>
-            <dt>事業内容</dt>
-            <dd>食品小売業</dd>
-            <dt>雇用形態</dt>
-            <dd>正社員</dd>
-            <dt>業務内容</dt>
-            <dd>店舗接客・販売</dd>
           </div>
         </dl>
         <p>
-          <a class="link" href="/history/">経歴の詳細はこちら</a>
+          <a class="link" href="/carrer/">経歴の詳細はこちら</a>
         </p>
-      </ArticleHistory>
+      </Articlecarrer>
     </section>
 
     <section class="gallery" id="gallery">
@@ -111,46 +64,16 @@
       <ArticleGallery>
         <div>
           <v-tabs v-model="model">
-            <v-tab href="#tab-1">訓練校時代</v-tab>
-            <v-tab href="#tab-2">制作会社勤務</v-tab>
-            <v-tab href="#tab-3">個人制作</v-tab>
+            <v-tab href="#tab-1">制作会社勤務</v-tab>
+            <v-tab href="#tab-2">個人制作</v-tab>
           </v-tabs>
           <v-tabs-items v-model="model">
             <v-tab-item value="tab-1">
-              訓練校時代で表示するコンテンツ
-              <v-container class="fill-height" fluid>
-                <v-fade-transition mode="out-in">
-                  <v-row>
-                    <v-col cols="6">
-                      <v-card>
-                        <v-img
-                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/piquant_thum-1.jpg"
-                          max-height="125"
-                          class="grey darken-4"
-                        ></v-img>
-                        <v-card-title class="title"> max-height </v-card-title>
-                      </v-card>
-                    </v-col>
-                    <v-col cols="6">
-                      <v-card>
-                        <v-img
-                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/piquant_thum-1.jpg"
-                          max-height="125"
-                          class="grey darken-4"
-                        ></v-img>
-                        <v-card-title class="title"> max-height </v-card-title>
-                      </v-card>
-                    </v-col>
-                  </v-row>
-                </v-fade-transition>
-              </v-container>
-            </v-tab-item>
-            <v-tab-item value="tab-2">
               制作会社勤務で表示するコンテンツ
               <v-container class="fill-height" fluid>
                 <v-fade-transition mode="out-in">
                   <v-row>
-                    <v-col cols="6">
+                    <v-col sm="6" cols="12">
                       <v-card>
                         <v-img
                           src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/five_thum.jpg"
@@ -161,6 +84,7 @@
                           <ul class="gallery__list">
                             <li class="gallery__item">投資系</li>
                             <li class="gallery__item">期間：2日</li>
+                            <li class="gallery__item">ページ数：1ページ</li>
                             <li class="gallery__item">担当：コーディング</li>
                             <li class="gallery__item">
                               言語：HTML / CSS / Scss / jQuery
@@ -176,7 +100,7 @@
                         </v-card-title>
                       </v-card>
                     </v-col>
-                    <v-col cols="6">
+                    <v-col sm="6" cols="12">
                       <v-card>
                         <v-img
                           src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/soshisha_thum.jpg"
@@ -187,6 +111,7 @@
                           <ul class="gallery__list">
                             <li class="gallery__item">広告代理店</li>
                             <li class="gallery__item">期間：2週間</li>
+                            <li class="gallery__item">ページ数：3ページ弱</li>
                             <li class="gallery__item">
                               担当：コーディング、WPの組み込み
                             </li>
@@ -204,16 +129,70 @@
                         </v-card-title>
                       </v-card>
                     </v-col>
+                    <v-col sm="6" cols="12">
+                      <v-card>
+                        <v-img
+                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/piquant_thum-1.jpg"
+                          max-height="125"
+                          class="grey darken-4"
+                        ></v-img>
+                        <v-card-title class="title">
+                          <ul class="gallery__list">
+                            <li class="gallery__item">ゲーム</li>
+                            <li class="gallery__item">期間：6ページ</li>
+                            <li class="gallery__item">ページ数：10ページ弱</li>
+                            <li class="gallery__item">担当：コーディング</li>
+                            <li class="gallery__item">
+                              言語：HTML / CSS / Scss / jQuery
+                            </li>
+                            <li class="gallery__item">
+                              <a
+                                href="https://drive.google.com/drive/u/1/folders/1J-nITjkvNJHv1cBUPCh0BMbU_nBxwa95"
+                                target="_blank"
+                                >サイトはこちら</a
+                              >
+                            </li>
+                          </ul>
+                        </v-card-title>
+                      </v-card>
+                    </v-col>
+                    <v-col sm="6" cols="12">
+                      <v-card>
+                        <v-img
+                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/ala_thum.jpg"
+                          max-height="125"
+                          class="grey darken-4"
+                        ></v-img>
+                        <v-card-title class="title">
+                          <ul class="gallery__list">
+                            <li class="gallery__item">英会話学校</li>
+                            <li class="gallery__item">期間：2週間</li>
+                            <li class="gallery__item">ページ数：10ページ弱</li>
+                            <li class="gallery__item">担当：コーディング</li>
+                            <li class="gallery__item">
+                              言語：HTML / CSS / Scss / jQuery / PHP
+                            </li>
+                            <li class="gallery__item">
+                              <a
+                                href="https://drive.google.com/drive/u/1/folders/178AVqBGH18MeshoORncCXZWfGBkvhQST"
+                                target="_blank"
+                                >サイトはこちら</a
+                              >
+                            </li>
+                          </ul>
+                        </v-card-title>
+                      </v-card>
+                    </v-col>
                   </v-row>
                 </v-fade-transition>
               </v-container>
             </v-tab-item>
-            <v-tab-item value="tab-3">
+            <v-tab-item value="tab-2">
               個人制作で表示するコンテンツ
               <v-container class="fill-height" fluid>
                 <v-fade-transition mode="out-in">
                   <v-row>
-                    <v-col cols="6">
+                    <v-col sm="6" cols="12">
                       <v-card>
                         <v-img
                           src="http://placehold.jp/16/aaaaaa/ffffff/150x100.png?text=comming soon"
@@ -223,7 +202,7 @@
                         <v-card-title class="title"> max-height </v-card-title>
                       </v-card>
                     </v-col>
-                    <v-col cols="6">
+                    <v-col sm="6" cols="12">
                       <v-card>
                         <v-img
                           src="http://placehold.jp/16/aaaaaa/ffffff/150x100.png?text=comming soon"
@@ -254,49 +233,5 @@ export default {
 };
 </script>
 
-<style scoped lang="scss" rel="" scoped>
-/* ----- common ----- */
-body {
-  color: $color-black;
-  background-color: $color-lightgray;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-}
-.link {
-  color: $color-blue;
-}
-
-/* ----- profile ----- */
-.profile {
-  &__img {
-    display: block;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-  }
-}
-
-/* ----- history ----- */
-.history {
-  &__box {
-    border-bottom: 1px dashed $color-gray;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-    &:last-of-type {
-      padding-bottom: 0;
-      border-bottom: inherit;
-    }
-  }
-  &__list__child {
-    padding-top: 8px;
-    margin-bottom: 0;
-    li {
-      text-indent: 1.5em;
-      padding-left: 0.5em;
-    }
-  }
-}
-
-/* ----- profile ----- */
-/* ----- profile ----- */
+<style scoped lang="scss" scoped>
 </style>

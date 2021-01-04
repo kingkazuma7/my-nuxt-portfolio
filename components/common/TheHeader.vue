@@ -8,13 +8,23 @@
         scroll-target="#scrolling-techniques-7"
       >
         <div class="header__inner">
-          <h1>
-            <v-toolbar-title>Kazuma Takanashi</v-toolbar-title>
+          <h1 class="ttl">
+            <v-toolbar-title
+              ><router-link to="/"
+                >Kazuma Takanashi</router-link
+              ></v-toolbar-title
+            >
           </h1>
-          <v-spacer></v-spacer>
-          <v-btn link nuxt to="#profile">自己紹介</v-btn>
-          <v-btn link nuxt to="#history">経歴</v-btn>
-          <v-btn link nuxt to="#gallery">ギャラリー</v-btn>
+          <v-spacer class="pc-element"></v-spacer>
+          <div class="header__button">
+            <v-btn depressed link nuxt class="btn"
+              ><router-link to="/profile/">自己紹介</router-link></v-btn
+            >
+            <v-btn depressed link nuxt class="btn"
+              ><router-link to="/carrer/">経歴</router-link></v-btn
+            >
+            <v-btn depressed link nuxt class="btn">ギャラリー</v-btn>
+          </div>
         </div>
       </v-app-bar>
       <v-sheet

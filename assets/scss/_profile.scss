@@ -1,0 +1,12 @@
+@import "_breakpoints";
+
+.profile {
+  &__img {
+    max-width: 100%;
+    margin: 0 auto 30px;
+    display: block;
+    @media #{$breakpoint-sp} {
+      max-width: 50%;
+    }
+  }
+}
