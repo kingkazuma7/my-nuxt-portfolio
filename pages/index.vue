@@ -217,7 +217,7 @@
           </v-tabs-items>
           <br /><br />
           <h3>ポートフォリオ</h3>
-          <p>▷<a class="link" href="/">新ポートフォリオ</a></p>
+          <p>▷<a class="link" href="/">新ポートフォリオ</a>※ベータ版</p>
           <p>
             ▷<a class="link" target="_blank" href="http://portfolio.nasio7.com/"
               >旧ポートフォリオ</a

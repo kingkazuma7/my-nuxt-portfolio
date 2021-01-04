@@ -26,7 +26,7 @@
               target="_blank"
               >新ポートフォリオ</a
             >
-            <p>※Vue.jsで作成しました</p>
+            <p>※Vue.jsで作成しました（ベータ版）</p>
           </div>
           <div class="carrer__box">
             <dt>会社名</dt>
