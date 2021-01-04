@@ -21,6 +21,12 @@
               その他、細かく案件ごとにコーディング業務を担当しています。<br />
               Gitを用いたコードレビューなども行い、メンテナンスコストの高いコードを意識しました。
             </dd>
+            <a
+              href="https://flamboyant-lumiere-e2c0be.netlify.app/"
+              target="_blank"
+              >新ポートフォリオ</a
+            >
+            <p>※Vue.jsで作成しました</p>
           </div>
           <div class="carrer__box">
             <dt>会社名</dt>
@@ -91,6 +97,14 @@
               学校終了後半にはWEB制作会社でのインターンシップにも取り組みました。<br /><br />
               インターンシップ内容としては、実際に過去、公開されていたPC、スマホサイトのコーディング、ランディングページの案件などに関わらせていただきました。<br /><br />
               実際の制作現場で学べたことはとても良き経験となりました。
+            </dd>
+            <dd>
+              <a
+                class="link"
+                href="https://kingkazuma7.github.io/felica-portfolio.github.io/felica/"
+                target="_blank"
+                >訓練校ポートフォリオ</a
+              >
             </dd>
           </div>
           <div class="carrer__box">

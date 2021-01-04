@@ -12,9 +12,7 @@
           東京都江戸川区出身。27歳。<br />Web業界に興味をもち、半年間スクールに通い、その後就職。<br />
           業界歴は約2年間ほどになります。<br />
         </p>
-        <p>
-          <a class="link" href="/profile/">プロフィール詳細はこちら</a>
-        </p>
+        <p><a class="link" href="/profile/">プロフィール詳細はこちら</a></p>
       </ArticleProfile>
     </section>
 
@@ -217,6 +215,22 @@
               </v-container>
             </v-tab-item>
           </v-tabs-items>
+          <br /><br />
+          <h3>ポートフォリオ</h3>
+          <p>▷<a class="link" target="_blank" href="/">新ポートフォリオ</a></p>
+          <p>
+            ▷<a class="link" target="_blank" href="http://portfolio.nasio7.com/"
+              >旧ポートフォリオ</a
+            >
+          </p>
+          <p>
+            ▷<a
+              class="link"
+              href="https://kingkazuma7.github.io/felica-portfolio.github.io/felica/"
+              target="_blank"
+              >訓練校ポートフォリオ</a
+            >
+          </p>
         </div>
       </ArticleGallery>
     </section>
