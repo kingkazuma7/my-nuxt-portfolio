@@ -1,6 +1,7 @@
 @import "_breakpoints";
 
 .header {
+  background: $color-main;
   @media #{$breakpoint-sp} {
     .v-app-bar,
     .v-toolbar__content {
