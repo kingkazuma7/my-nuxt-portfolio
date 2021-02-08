@@ -197,7 +197,7 @@
                           max-height="125"
                           class="grey darken-4"
                         ></v-img>
-                        <v-card-title class="title"> max-height </v-card-title>
+                        <v-card-title class="title"> test </v-card-title>
                       </v-card>
                     </v-col>
                     <v-col sm="6" cols="12">
@@ -207,7 +207,7 @@
                           max-height="125"
                           class="grey darken-4"
                         ></v-img>
-                        <v-card-title class="title"> max-height </v-card-title>
+                        <v-card-title class="title"> test </v-card-title>
                       </v-card>
                     </v-col>
                   </v-row>
