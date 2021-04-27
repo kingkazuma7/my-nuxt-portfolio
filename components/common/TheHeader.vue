@@ -23,7 +23,7 @@
             <v-btn depressed link nuxt class="btn"
               ><router-link to="/carrer/">経歴</router-link></v-btn
             >
-            <v-btn depressed link nuxt disabled class="btn"
+            <v-btn depressed link nuxt class="btn"
               ><router-link to="/gallery/">ギャラリー</router-link></v-btn
             >
           </div>
