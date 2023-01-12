@@ -22,9 +22,15 @@
         <dl class="carrer__list">
           <div class="carrer__box">
             <dt>会社名</dt>
-            <dd>株式会社ウェブスタッフ</dd>
+            <dd>株式会社オートバックスセブン</dd>
             <dt>期間</dt>
-            <dd>2020年7月～</dd>
+            <dd>2021年4月～2022年7月</dd>
+          </div>
+          <div class="carrer__box">
+            <dt>会社名</dt>
+            <dd>株式会社ウェブスタッフ（Yahoo! JAPANに出向）</dd>
+            <dt>期間</dt>
+            <dd>2020年7月～2021年3月</dd>
           </div>
           <div class="carrer__box">
             <dt>会社名</dt>
@@ -44,12 +50,6 @@
             <dt>期間</dt>
             <dd>2016年10月～2017年 4月</dd>
           </div>
-          <div class="carrer__box">
-            <dt>会社名</dt>
-            <dd>株式会社サミット</dd>
-            <dt>期間</dt>
-            <dd>2016年4月～2016年 9月</dd>
-          </div>
         </dl>
         <p>
           <a class="link" href="/carrer/">経歴の詳細はこちら</a>
@@ -67,7 +67,6 @@
           </v-tabs>
           <v-tabs-items v-model="model">
             <v-tab-item value="tab-1">
-              制作会社勤務で表示するコンテンツ
               <v-container class="fill-height" fluid>
                 <v-fade-transition mode="out-in">
                   <v-row>
@@ -186,8 +185,7 @@
               </v-container>
             </v-tab-item>
             <v-tab-item value="tab-2">
-              個人制作で表示するコンテンツ
-              <v-container class="fill-height" fluid>
+              <v-contsainer class="fill-height" fluid>
                 <v-fade-transition mode="out-in">
                   <v-row>
                     <v-col sm="6" cols="12">
@@ -212,7 +210,7 @@
                     </v-col>
                   </v-row>
                 </v-fade-transition>
-              </v-container>
+              </v-contsainer>
             </v-tab-item>
           </v-tabs-items>
           <br /><br />
