@@ -57,6 +57,7 @@
       </Articlecarrer>
     </section>
 
+    {{ itemJson }}
     <section class="gallery" id="gallery">
       <h2 class="section-title">Gallery</h2>
       <ArticleGallery>
@@ -70,7 +71,30 @@
               <v-container class="fill-height" fluid>
                 <v-fade-transition mode="out-in">
                   <v-row>
-                    <v-col sm="6" cols="12">
+                    <v-col
+                      v-for="(item, key) in items" :key="key"
+                      sm="6" cols="12" >
+                      <v-card>
+                        <v-img
+                          :src="item.imgPath"
+                          max-height="125"
+                          class="grey darken-4" />
+                        <v-card-title class="title">
+                          <ul class="gallery__list">
+                              <li class="gallery__item">{{ item.title }}</li>
+                              <li class="gallery__item">期間：{{ item.term }}日</li>
+                              <li class="gallery__item">ページ数：{{ item.pageNumber }}ページ</li>
+                              <li class="gallery__item">担当：{{ item.person }}</li>
+                              <li class="gallery__item">言語：{{ item.langage }}</li>
+                              <li class="gallery__item">
+                                <!-- <a v-bind="item.url">リンク</a> -->
+                              </li>
+                          </ul>
+                        </v-card-title>
+                      </v-card>
+                    </v-col>
+                    
+                    <!-- <v-col sm="6" cols="12">
                       <v-card>
                         <v-img
                           src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/five_thum.jpg"
@@ -179,7 +203,7 @@
                           </ul>
                         </v-card-title>
                       </v-card>
-                    </v-col>
+                    </v-col> -->
                   </v-row>
                 </v-fade-transition>
               </v-container>
@@ -236,10 +260,21 @@
 </template>
 
 <script>
+import itemJsons from "../static/json/projects.json"
+
 export default {
   data() {
     return {
       model: "tab-1",
+      items: itemJsons,
+      linkUrl: [
+        {
+          1: "https://drive.google.com/drive/u/1/folders/1prp-rulmHRc1e2l4WSrsl2TKHsCdBRHA",
+          2: "https://drive.google.com/drive/u/1/folders/1Oc58Ej-PXVHzBxuDQd5Rv4sou6eGuQjs",
+          3: "https://drive.google.com/drive/u/1/folders/1J-nITjkvNJHv1cBUPCh0BMbU_nBxwa95",
+          4: "https://drive.google.com/drive/u/1/folders/178AVqBGH18MeshoORncCXZWfGBkvhQST"
+        }
+      ]
     };
   },
 };
