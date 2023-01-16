@@ -24,5 +24,8 @@
     "reset-css": "^5.0.1",
     "sass": "^1.57.1",
     "sass-loader": "^7.1.0"
+  },
+  "rules": {
+    "no-console": 0
   }
 }
