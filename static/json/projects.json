@@ -27,12 +27,30 @@
     "url": "https://drive.google.com/drive/u/1/folders/1J-nITjkvNJHv1cBUPCh0BMbU_nBxwa95"
   },
   {
-    "title": "英会話学校",
+    "title": "英会話スクール",
     "term": 14,
     "imgPath": "https://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/ala_thum.jpg",
     "pageNumber": 10,
     "person": "コーディング",
     "langage": "HTML / CSS / Scss / jQuery / PHP",
     "url": "https://drive.google.com/drive/u/1/folders/178AVqBGH18MeshoORncCXZWfGBkvhQST"
+  },
+  {
+    "title": "英会話スクール",
+    "term": 21,
+    "imgPath": "https://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/nakano_thum.jpg",
+    "pageNumber": 10,
+    "person": "コーディング",
+    "langage": "HTML / CSS / Scss / WordPress / PHP / jQuery",
+    "url": "https://drive.google.com/drive/u/1/folders/168xGua4hTPbRNoR3MnlqhwDcENJ2Ofyq"
+  },
+  {
+    "title": "CAP 社内システムツール",
+    "term": 3,
+    "imgPath": "https://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/cap_thum.jpg",
+    "pageNumber": 1,
+    "person": "コーディング",
+    "langage": "HTML / CSS / Scss / jQuery",
+    "url": "https://drive.google.com/drive/u/1/folders/168xGua4hTPbRNoR3MnlqhwDcENJ2Ofyq"
   }
 ]
