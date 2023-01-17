@@ -110,14 +110,14 @@
                           class="grey darken-4" />
                         <v-card-title class="title">
                           <ul class="gallery__list">
-                              <li class="gallery__item">{{ myItem.title ? myItem.title : "?" }}</li>
-                              <li class="gallery__item">期間：{{ myItem.term ? myItem.term : "?" }}日</li>
-                              <li class="gallery__item">ページ数：{{ myItem.pageNumber ? myItem.pageNumber : "?" }}ページ</li>
-                              <li class="gallery__item">担当：{{ myItem.person ? myItem.person : "?" }}</li>
-                              <li class="gallery__item">言語：{{ myItem.langage ? myItem.langage : "?" }}</li>
-                              <li class="gallery__item">
-                                <a :href="myItem.url ? myItem.url : null" target="_blank" >サイトはこちら</a>
-                              </li>
+                            <li class="gallery__item">{{ myItem.title ? myItem.title : "?" }}</li>
+                            <li class="gallery__item">期間：{{ myItem.term ? myItem.term : "?" }}日</li>
+                            <li class="gallery__item">ページ数：{{ myItem.pageNumber ? myItem.pageNumber : "?" }}ページ</li>
+                            <li class="gallery__item">担当：{{ myItem.person ? myItem.person : "?" }}</li>
+                            <li class="gallery__item">言語：{{ myItem.langage ? myItem.langage : "?" }}</li>
+                            <li class="gallery__item">
+                              <a :href="myItem.url ? myItem.url : null" target="_blank" >サイトはこちら</a>
+                            </li>
                           </ul>
                         </v-card-title>
                       </v-card>
