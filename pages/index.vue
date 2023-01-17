@@ -57,7 +57,6 @@
       </Articlecarrer>
     </section>
 
-    {{ itemJson }}
     <section class="gallery" id="gallery">
       <h2 class="section-title">Gallery</h2>
       <ArticleGallery>
@@ -87,123 +86,12 @@
                               <li class="gallery__item">担当：{{ item.person }}</li>
                               <li class="gallery__item">言語：{{ item.langage }}</li>
                               <li class="gallery__item">
-                                <!-- <a v-bind="item.url">リンク</a> -->
+                                <a :href="item.url" target="_blank" >サイトはこちら</a>
                               </li>
                           </ul>
                         </v-card-title>
                       </v-card>
                     </v-col>
-                    
-                    <!-- <v-col sm="6" cols="12">
-                      <v-card>
-                        <v-img
-                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/five_thum.jpg"
-                          max-height="125"
-                          class="grey darken-4"
-                        ></v-img>
-                        <v-card-title class="title">
-                          <ul class="gallery__list">
-                            <li class="gallery__item">投資系</li>
-                            <li class="gallery__item">期間：2日</li>
-                            <li class="gallery__item">ページ数：1ページ</li>
-                            <li class="gallery__item">担当：コーディング</li>
-                            <li class="gallery__item">
-                              言語：HTML / CSS / Scss / jQuery
-                            </li>
-                            <li class="gallery__item">
-                              <a
-                                href="https://drive.google.com/drive/u/1/folders/1prp-rulmHRc1e2l4WSrsl2TKHsCdBRHA"
-                                target="_blank"
-                                >サイトはこちら</a
-                              >
-                            </li>
-                          </ul>
-                        </v-card-title>
-                      </v-card>
-                    </v-col>
-                    <v-col sm="6" cols="12">
-                      <v-card>
-                        <v-img
-                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/soshisha_thum.jpg"
-                          max-height="125"
-                          class="grey darken-4"
-                        ></v-img>
-                        <v-card-title class="title">
-                          <ul class="gallery__list">
-                            <li class="gallery__item">広告代理店</li>
-                            <li class="gallery__item">期間：2週間</li>
-                            <li class="gallery__item">ページ数：3ページ弱</li>
-                            <li class="gallery__item">
-                              担当：コーディング、WPの組み込み
-                            </li>
-                            <li class="gallery__item">
-                              言語：HTML / CSS / Scss / WordPress / PHP / jQuery
-                            </li>
-                            <li class="gallery__item">
-                              <a
-                                href="https://drive.google.com/drive/u/1/folders/1Oc58Ej-PXVHzBxuDQd5Rv4sou6eGuQjs"
-                                target="_blank"
-                                >サイトはこちら</a
-                              >
-                            </li>
-                          </ul>
-                        </v-card-title>
-                      </v-card>
-                    </v-col>
-                    <v-col sm="6" cols="12">
-                      <v-card>
-                        <v-img
-                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/piquant_thum-1.jpg"
-                          max-height="125"
-                          class="grey darken-4"
-                        ></v-img>
-                        <v-card-title class="title">
-                          <ul class="gallery__list">
-                            <li class="gallery__item">ゲーム</li>
-                            <li class="gallery__item">期間：6ページ</li>
-                            <li class="gallery__item">ページ数：10ページ弱</li>
-                            <li class="gallery__item">担当：コーディング</li>
-                            <li class="gallery__item">
-                              言語：HTML / CSS / Scss / jQuery
-                            </li>
-                            <li class="gallery__item">
-                              <a
-                                href="https://drive.google.com/drive/u/1/folders/1J-nITjkvNJHv1cBUPCh0BMbU_nBxwa95"
-                                target="_blank"
-                                >サイトはこちら</a
-                              >
-                            </li>
-                          </ul>
-                        </v-card-title>
-                      </v-card>
-                    </v-col>
-                    <v-col sm="6" cols="12">
-                      <v-card>
-                        <v-img
-                          src="http://portfolio.nasio7.com/portfolio/wp-content/uploads/2020/01/ala_thum.jpg"
-                          max-height="125"
-                          class="grey darken-4"
-                        ></v-img>
-                        <v-card-title class="title">
-                          <ul class="gallery__list">
-                            <li class="gallery__item">英会話学校</li>
-                            <li class="gallery__item">期間：2週間</li>
-                            <li class="gallery__item">ページ数：10ページ弱</li>
-                            <li class="gallery__item">担当：コーディング</li>
-                            <li class="gallery__item">
-                              言語：HTML / CSS / Scss / jQuery / PHP
-                            </li>
-                            <li class="gallery__item">
-                              <a
-                                href="https://drive.google.com/drive/u/1/folders/178AVqBGH18MeshoORncCXZWfGBkvhQST"
-                                target="_blank"
-                                >サイトはこちら</a
-                              >
-                            </li>
-                          </ul>
-                        </v-card-title>
-                      </v-card>
-                    </v-col> -->
                   </v-row>
                 </v-fade-transition>
               </v-container>
