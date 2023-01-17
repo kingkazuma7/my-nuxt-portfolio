@@ -100,24 +100,26 @@
               <v-contsainer class="fill-height" fluid>
                 <v-fade-transition mode="out-in">
                   <v-row>
-                    <v-col sm="6" cols="12">
+                    <v-col
+                      v-for="(myItem, key) in myItems" :key="key"
+                      sm="6" cols="12" >
                       <v-card>
                         <v-img
-                          src="http://placehold.jp/16/aaaaaa/ffffff/150x100.png?text=comming soon"
+                          :src="myItem.imgPath"
                           max-height="125"
-                          class="grey darken-4"
-                        ></v-img>
-                        <v-card-title class="title"> test </v-card-title>
-                      </v-card>
-                    </v-col>
-                    <v-col sm="6" cols="12">
-                      <v-card>
-                        <v-img
-                          src="http://placehold.jp/16/aaaaaa/ffffff/150x100.png?text=comming soon"
-                          max-height="125"
-                          class="grey darken-4"
-                        ></v-img>
-                        <v-card-title class="title"> test </v-card-title>
+                          class="grey darken-4" />
+                        <v-card-title class="title">
+                          <ul class="gallery__list">
+                              <li class="gallery__item">{{ myItem.title ? myItem.title : "?" }}</li>
+                              <li class="gallery__item">期間：{{ myItem.term ? myItem.term : "?" }}日</li>
+                              <li class="gallery__item">ページ数：{{ myItem.pageNumber ? myItem.pageNumber : "?" }}ページ</li>
+                              <li class="gallery__item">担当：{{ myItem.person ? myItem.person : "?" }}</li>
+                              <li class="gallery__item">言語：{{ myItem.langage ? myItem.langage : "?" }}</li>
+                              <li class="gallery__item">
+                                <a :href="myItem.url ? myItem.url : null" target="_blank" >サイトはこちら</a>
+                              </li>
+                          </ul>
+                        </v-card-title>
                       </v-card>
                     </v-col>
                   </v-row>
@@ -148,21 +150,15 @@
 </template>
 
 <script>
-import itemJsons from "../static/json/projects.json"
+import itemJsons from "../static/json/projects"
+import myJsonItems from "../static/json/myworks.json"
 
 export default {
   data() {
     return {
       model: "tab-1",
       items: itemJsons,
-      linkUrl: [
-        {
-          1: "https://drive.google.com/drive/u/1/folders/1prp-rulmHRc1e2l4WSrsl2TKHsCdBRHA",
-          2: "https://drive.google.com/drive/u/1/folders/1Oc58Ej-PXVHzBxuDQd5Rv4sou6eGuQjs",
-          3: "https://drive.google.com/drive/u/1/folders/1J-nITjkvNJHv1cBUPCh0BMbU_nBxwa95",
-          4: "https://drive.google.com/drive/u/1/folders/178AVqBGH18MeshoORncCXZWfGBkvhQST"
-        }
-      ]
+      myItems: myJsonItems
     };
   },
 };
