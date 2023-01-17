@@ -22,7 +22,7 @@ export default {
 
 <style scoped lang="scss">
 .contents {
-  max-width: 500px;
+  max-width: 600px;
   padding: 40px 15px;
   margin: 0 auto;
 }
