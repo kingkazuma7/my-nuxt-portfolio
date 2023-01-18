@@ -64,6 +64,7 @@
           <v-tabs v-model="model">
             <v-tab href="#tab-1">制作会社勤務</v-tab>
             <v-tab href="#tab-2">個人制作</v-tab>
+            <v-tab href="#tab-3">事業会社A</v-tab>
           </v-tabs>
           <v-tabs-items v-model="model">
             <v-tab-item value="tab-1">
@@ -106,7 +107,35 @@
                       <v-card>
                         <v-img
                           :src="myItem.imgPath"
-                          max-height="125"
+                          class="grey darken-4" />
+                        <v-card-title class="title">
+                          <ul class="gallery__list">
+                            <li class="gallery__item">{{ myItem.title ? myItem.title : "?" }}</li>
+                            <li class="gallery__item">期間：{{ myItem.term ? myItem.term : "?" }}日</li>
+                            <li class="gallery__item">ページ数：{{ myItem.pageNumber ? myItem.pageNumber : "?" }}ページ</li>
+                            <li class="gallery__item">担当：{{ myItem.person ? myItem.person : "?" }}</li>
+                            <li class="gallery__item">言語：{{ myItem.langage ? myItem.langage : "?" }}</li>
+                            <li class="gallery__item">
+                              <a :href="myItem.url ? myItem.url : null" target="_blank" >サイトはこちら</a>
+                            </li>
+                          </ul>
+                        </v-card-title>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+                </v-fade-transition>
+              </v-contsainer>
+            </v-tab-item>
+            <v-tab-item value="tab-3">
+              <v-contsainer class="fill-height" fluid>
+                <v-fade-transition mode="out-in">
+                  <v-row>
+                    <v-col
+                      v-for="(myItem, key) in yahooItems" :key="key"
+                      sm="6" cols="12" >
+                      <v-card>
+                        <v-img
+                          :src="myItem.imgPath"
                           class="grey darken-4" />
                         <v-card-title class="title">
                           <ul class="gallery__list">
@@ -152,13 +181,15 @@
 <script>
 import itemJsons from "../static/json/projects"
 import myJsonItems from "../static/json/myworks.json"
+import yahooJsonItems from "../static/json/yahoo"
 
 export default {
   data() {
     return {
       model: "tab-1",
       items: itemJsons,
-      myItems: myJsonItems
+      myItems: myJsonItems,
+      yahooItems: yahooJsonItems
     };
   },
 };
