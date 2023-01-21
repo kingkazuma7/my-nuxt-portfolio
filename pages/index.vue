@@ -22,6 +22,12 @@
         <dl class="carrer__list">
           <div class="carrer__box">
             <dt>会社名</dt>
+            <dd>レバテック株式会社（ゴルフダイジェスト・オンラインに出向）</dd>
+            <dt>期間</dt>
+            <dd>2022年8月～在職中</dd>
+          </div>
+          <div class="carrer__box">
+            <dt>会社名</dt>
             <dd>株式会社オートバックスセブン</dd>
             <dt>期間</dt>
             <dd>2021年4月～2022年7月</dd>
