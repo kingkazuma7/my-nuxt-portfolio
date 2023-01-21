@@ -1,9 +1,9 @@
 <template>
   <div class="pageContainer">
     <TheHeader />
-    <main class="contents">
-      <nuxt />
-    </main>
+      <v-app class="contents">
+        <nuxt />
+      </v-app>
     <TheFooter />
   </div>
 </template>
