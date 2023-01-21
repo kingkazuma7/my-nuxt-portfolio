@@ -94,7 +94,7 @@
             </dd>
           </div>
           <div class="carrer__box">
-            <dt>会社名</dt>
+            <dt>学校名</dt>
             <dd>フェリカテクニカルアカデミー Webサイト制作科</dd>
             <dt>期間</dt>
             <dd>2016年10月～2017年 4月</dd>
