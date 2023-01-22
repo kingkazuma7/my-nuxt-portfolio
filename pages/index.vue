@@ -20,41 +20,11 @@
       <h2 class="section-title">Carrer</h2>
       <Articlecarrer>
         <dl class="carrer__list">
-          <div class="carrer__box">
+          <div class="carrer__box" v-for="carrerItem in carrerItems" :key="carrerItem.carrerListName">
             <dt>会社名</dt>
-            <dd>レバテック株式会社（ゴルフダイジェスト・オンラインに出向）</dd>
+            <dd>{{ carrerItem.carrerListName }}</dd>
             <dt>期間</dt>
-            <dd>2022年8月～在職中</dd>
-          </div>
-          <div class="carrer__box">
-            <dt>会社名</dt>
-            <dd>株式会社オートバックスセブン</dd>
-            <dt>期間</dt>
-            <dd>2021年4月～2022年7月</dd>
-          </div>
-          <div class="carrer__box">
-            <dt>会社名</dt>
-            <dd>株式会社ウェブスタッフ（Yahoo! JAPANに出向）</dd>
-            <dt>期間</dt>
-            <dd>2020年7月～2021年3月</dd>
-          </div>
-          <div class="carrer__box">
-            <dt>会社名</dt>
-            <dd>株式会社フライング・ハイ・ワークス</dd>
-            <dt>期間</dt>
-            <dd>2018年2月～2019年12月</dd>
-          </div>
-          <div class="carrer__box">
-            <dt>会社名</dt>
-            <dd>株式会社アウルキャンプ</dd>
-            <dt>期間</dt>
-            <dd>2017年6月～11月</dd>
-          </div>
-          <div class="carrer__box">
-            <dt>学校名</dt>
-            <dd>フェリカテクニカルアカデミー Webサイト制作科</dd>
-            <dt>期間</dt>
-            <dd>2016年10月～2017年 4月</dd>
+            <dd>{{ carrerItem.carrerListTerm }}</dd>
           </div>
         </dl>
         <p>
@@ -163,7 +133,33 @@ export default {
     return {
       model: "tab-1",
       items: itemJsons,
-      yahooItems: yahooJsonItems
+      yahooItems: yahooJsonItems,
+      carrerItems: [
+        {
+          carrerListName: 'レバテック株式会社（ゴルフダイジェスト・オンラインに出向）',
+          carrerListTerm: '2022年8月～在職中'
+        },
+        {
+          carrerListName:'株式会社オートバックスセブン',
+          carrerListTerm: '2021年4月～2022年7月'
+        },
+        {
+          carrerListName:'株式会社ウェブスタッフ（Yahoo! JAPANに出向）',
+          carrerListTerm: '2020年7月～2021年3月'
+        },
+        {
+          carrerListName:'株式会社フライング・ハイ・ワークス',
+          carrerListTerm: '2018年2月～2019年12月'
+        },
+        {
+          carrerListName:'株式会社アウルキャンプ',
+          carrerListTerm: '2017年6月～11月'
+        },
+        {
+          carrerListName:'フェリカテクニカルアカデミー Webサイト制作科（学校）',
+          carrerListTerm: '2016年10月～2017年4月'
+        }
+      ]
     };
   },
 };
